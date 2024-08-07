@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .work {
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            text-align: center;
+            border-color:green;
+            box-shadow: 12px 12px 12px black;
+            
+        }
+        .image{
+            margin-top: 120px;
+            border-radius: 40%;
+        }
+        button {
+            background-color: rgb(236, 24, 148);
+            color: white;
+            margin: 10px 10px;
+            box-shadow:10px 6px 8px green;
+        }
+        .work > .one:hover ~ img{
+            transform: scale(24);
+            transition: all 5s ease-in-out;
+        }
+        .work > .two:hover ~ img{
+            transform:rotate(4000deg);
+            transition: all 4s ease-in-out;
+        }
+        .work > .three:hover ~ img{
+            transform: skew(3000deg);
+            transition: all 3s ease-in-out;
+        }
+        .work > .four:hover ~ img{
+            transform:translate(180%);
+            transition: all 2s ease-in-out;
+           }
+</style>
+</head>
+<body>
+    <div class="work">
+        <button class="one">scale</button>
+        <button class="two">rotate</button>
+        <button class="three">skew</button>
+        <button class="four">translate</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSycUU2bNhSpXE5BFZCPARIobTnAfmb2sQhnQ&s" alt="" width="100px" class="image">
+    </div>
+</body>
+</html>
